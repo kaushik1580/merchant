@@ -1,7 +1,7 @@
 <template>
 <div class="pet">
   <h1>Pet Accessories</h1>
-  <router-link to="/addnew"><button class="button button 1">Add New</button></router-link>
+  <router-link to="/addnewpet"><button class="button button 1">Add New</button></router-link>
   <table style="width:100%">
   <tr>
     <th>Id</th>

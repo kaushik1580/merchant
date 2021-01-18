@@ -116,6 +116,38 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AddNew.vue')
   },
   {
+    path: '/addnewbird',
+    name: 'AddNewBird',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AddNewBird.vue')
+  },
+  {
+    path: '/addnewcat',
+    name: 'AddNewCat',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AddNewCat.vue')
+  },
+  {
+    path: '/addnewfish',
+    name: 'AddNewFish',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AddNewFish.vue')
+  },
+  {
+    path: '/addnewpet',
+    name: 'AddNewPet',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../views/AddNewPet.vue')
+  },
+  {
     path: '/order',
     name: 'OrderHistory',
     // route level code-splitting

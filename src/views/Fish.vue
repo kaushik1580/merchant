@@ -1,7 +1,7 @@
 <template>
 <div class="fish">
   <h1>Fish & Reptiles</h1>
-  <router-link to="/addnew"><button class="button button 1">Add New</button></router-link>
+  <router-link to="/addnewfish"><button class="button button 1">Add New</button></router-link>
   <table style="width:100%">
   <tr>
     <th>Index</th>
