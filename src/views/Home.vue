@@ -1,13 +1,13 @@
 <template>
 <div class="relative">
   <h1 class="display-3 font-weight-bold">Login</h1>
-  <form action="" @submit="getData" method="get">
+  <form action="" >
   <div class="container">
     <label for="uname"><b>Email</b></label>
     <input type="email" placeholder="Enter Username" name="email" required v-model="gets.email">
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required v-model="gets.password">
-    <router-link to="/start"><button type="submit" @click="getData">Login</button></router-link>
+    <button type="button" @click="getData">Login</button>
   </div>
   <div class="container" style="background-color:#f1f1f1">
     <router-link class="nav-item" to="/merregistration"><span class="psw">New User <a href="#">Click Here</a></span></router-link>
@@ -35,10 +35,17 @@ export default {
   methods: {
     getData (e) {
       console.warn(this.gets)
-      this.axios.get(`${this.url}/${this.gets.email}/${this.gets.password}`, this.gets)
+      axios.get(`${this.url}/${this.gets.email}/${this.gets.password}`)
         .then((result) => {
-          console.warn(this.gets)
-        }).catch(error => console.log(error))
+          console.log('result result', JSON.parse(JSON.stringify(result)))
+          console.log('data', result.data)
+          if (result.data) {
+            this.$router.push({ path: '/start' })
+            alert('Login Successful')
+          } else {
+            alert('Wrong Id or Password')
+          }
+        }).catch(error => console.log('error', error))
     }
   }
 }
@@ -47,10 +54,11 @@ export default {
 <style scoped>
 div.relative {
   position: absolute;
-  left: 20%;
-  width: 60%;
+  left: 30%;
+  width: 40%;
   height: 50%;
   border: 3px solid #000000;
+  margin: 0 auto;
 }
 form {
   border: 3px solid #f1f1f1;

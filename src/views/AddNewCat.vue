@@ -36,7 +36,7 @@ export default {
     return {
       // selectedFile: null,
       posts: {
-        imageUrl: 'hdfc.com',
+        imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Ftimesofindia.indiatimes.com%2Flife-style%2Frelationships%2Fpets%2F5-things-that-scare-and-stress-your-cat%2Farticleshow%2F67586673.cms&psig=AOvVaw3vUeAI3gbj0Nen-MNX0Uzh&ust=1611139193958000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODYyq3np-4CFQAAAAAdAAAAABAD',
         productName: null,
         description: null,
         age: null,

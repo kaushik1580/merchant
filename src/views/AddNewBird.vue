@@ -36,7 +36,7 @@ export default {
     return {
       // selectedFile: null,
       posts: {
-        imageUrl: 'hdfc.com',
+        imageUrl: 'https://www.si.edu/sites/default/files/blog/scta-copy1.jpg',
         productName: null,
         description: null,
         age: null,

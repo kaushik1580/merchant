@@ -35,7 +35,7 @@ export default {
   data () {
     return {
       posts: {
-        // productId: this.$store.state.dogs.productId,
+        productId: `${this.$route.params.id}`,
         productName: null,
         description: null,
         age: null,

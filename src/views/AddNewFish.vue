@@ -36,7 +36,7 @@ export default {
     return {
       // selectedFile: null,
       posts: {
-        imageUrl: 'hdfc.com',
+        imageUrl: 'https://www.thoughtco.com/thmb/v5fuyNkg8LATJP2DSnZ34xoOaF8=/1885x1414/smart/filters:no_upscale()/GettyImages-622013488-55a1fad50d93429fb927087e1f18cff8.jpg',
         productName: null,
         description: null,
         age: null,
