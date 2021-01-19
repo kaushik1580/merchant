@@ -1,7 +1,8 @@
 <template>
 <div class="cat">
-  <h1>Cats</h1>
+  <h1>Meoww for Cats..</h1>
   <router-link to="/addnewcat"><button class="button button 1">Add New</button></router-link>
+  <router-link to="/start"><button class="button2">Home Page</button></router-link>
   <table style="width:100%">
   <tr>
     <th>Id</th>
@@ -57,6 +58,19 @@ table, td {
   margin: 4px 2px;
   cursor: pointer;
   float: right;
+}
+.button2 {
+  background-color: #333f; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: left;
 }
 .button5 {background-color: #555555;
 }

@@ -36,7 +36,7 @@ export default {
     return {
       // selectedFile: null,
       posts: {
-        imageUrl: 'hdfc.com',
+        imageUrl: 'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/11234019/Bulldog-standing-in-the-grass.jpg',
         productName: null,
         description: null,
         age: null,
@@ -44,7 +44,7 @@ export default {
         color: null,
         quantity: null,
         price: null,
-        categoryName: 'Dog', // category name & merchant id will we coming from login using router push
+        categoryName: 'Dogs', // category name & merchant id will we coming from login using router push
         merchantId: 2,
         merchantName: 'Lewis'
       }

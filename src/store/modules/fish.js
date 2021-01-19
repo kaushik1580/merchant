@@ -9,7 +9,7 @@ const getters = {
 const actions = {
   async fetchFishs ({ commit }) {
     const response = await axios.get(
-      'http://10.177.1.58:8086/products/findAll'
+      'http://10.177.1.58:8086/products/findByCategoryName/Reptiles and Fishes'
     )
     commit('setFishs', response.data)
   }

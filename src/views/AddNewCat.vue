@@ -44,7 +44,7 @@ export default {
         color: null,
         quantity: null,
         price: null,
-        categoryName: 'Dog', // category name & merchant id will we coming from login using router push
+        categoryName: 'Cats', // category name & merchant id will we coming from login using router push
         merchantId: 2,
         merchantName: 'Lewis'
       }

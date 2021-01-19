@@ -22,10 +22,10 @@
       <a href="./fish"><img src="https://cdn.shopify.com/s/files/1/1529/9657/articles/Blog_Post_Header_81.jpg?v=1579105473" alt="Fish and Reptiles" style="width:100%" class="image"></a>
       <h4>Fish & Reptiles</h4>
     </div>
-    <div class="column">
+    <!-- <div class="column">
       <a href="./petacc"><img src="https://api.time.com/wp-content/uploads/2019/03/us-movie-rabbits-meaning.jpg?quality=85&w=1200&h=628&crop=1" alt="Small Animal" style="width:100%" class="image"></a>
       <h4>Pet Accessories</h4>
-    </div>
+    </div> -->
     </div>
   </div>
 </template>

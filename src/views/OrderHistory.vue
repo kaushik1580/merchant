@@ -5,16 +5,18 @@
   <table style="width:100%">
   <tr>
     <th>Order Id</th>
+    <th>User Id</th>
     <th>Time Stamp</th>
     <th>Total price (Rs)</th>
     <th></th>
   </tr>
   <tr v-for="product in allOrders" :key="product.orderId + new Date()+ product.timeStamp + product.totalPrice" class="dog">
     <td>{{product.orderId}} </td>
+    <td>{{product.userId}} </td>
     <!-- <td ><img :src="product.imageUrl" :alt="product.productName" width="32" height="32" class="image"></td> -->
     <td>{{product.timeStamp}}</td>
-    <td>{{product.totalPrice}}</td>
-    <td><button @click="setproductIdAndRoute(product.productId)" type="submit">Update</button></td>
+    <td>{{product.price}}</td>
+    <!-- <td><button @click="setproductIdAndRoute(product.productId)" type="submit">Update</button></td> -->
   </tr>
   </table>
 </div>
@@ -26,10 +28,10 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
   name: 'OrderHistory',
   methods: {
-    ...mapActions(['fetchOrders']),
-    setproductIdAndRoute (orderId) {
-      this.$router.push({ path: `/update/${orderId}` })
-    }
+    ...mapActions(['fetchOrders'])
+    // setproductIdAndRoute (orderId) {
+    //   this.$router.push({ path: `/update/${orderId}` })
+    // }
   },
   computed: {
     ...mapGetters(['allOrders'])

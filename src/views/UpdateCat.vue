@@ -17,7 +17,7 @@
     <input type="quantity" placeholder="Enter quantity" name="quantity" required v-model="posts.quantity">
     <label for="price"><b>Price</b></label>
     <input type="price" placeholder="Enter price" name="price" required v-model="posts.price">
-    <router-link to="/dog">
+    <router-link to="/cat">
     <button type="submit" @click="postData">Submit</button>
     </router-link>
   </div>
