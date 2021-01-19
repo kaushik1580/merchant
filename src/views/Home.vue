@@ -4,9 +4,9 @@
   <form action="" >
   <div class="container">
     <label for="uname"><b>Email</b></label>
-    <input type="email" placeholder="Enter Username" name="email" required v-model="gets.email">
+    <input type="email" placeholder="Enter Username" name="email" v-model="gets.email" required pattern="[^]+@[^]+[.][a-z]{2,63}$">
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required v-model="gets.password">
+    <input type="password" placeholder="Enter Password" name="password" v-model="gets.password" required>
     <button type="button" @click="getData">Login</button>
   </div>
   <div class="container" style="background-color:#f1f1f1">

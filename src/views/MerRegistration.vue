@@ -4,9 +4,9 @@
   <form action="" @submit="postData" method="post">
   <div class="container">
     <label for="userName"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" required name="userName" v-model="posts.userName">
+    <input type="text" placeholder="Enter Username" name="userName" v-model="posts.userName" required>
     <label for="email"><b>Email</b></label>
-    <input type="email" placeholder="Enter Email" required name="email" v-model="posts.email">
+    <input type="email" placeholder="Enter Email" name="email" v-model="posts.email" required pattern="[^]+@[^]+[.][a-z]{2,63}$">
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required v-model="posts.password">
     <label for="gender"><b>Gender</b></label>

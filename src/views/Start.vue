@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="topnav">
-    <a class="active" href="#home">Profile</a>
+    <a class="active" href="/">Logout</a>
     <a href="/order">Order History</a>
   </div>
     <h1>Categories</h1>

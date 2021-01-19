@@ -6,7 +6,7 @@
     <label for="productName"><b>Product Name</b></label>
     <input type="text" placeholder="Enter Product tName" required name="productName" v-model="posts.productName">
     <label for="description"><b>Description</b></label>
-    <input type="text" placeholder="Entter Description" required name="description" v-model="posts.description">
+    <input type="text" placeholder="Entter Description" required name="description" v-model="posts.description" maxlength="255">
     <label for="age"><b>Age</b></label>
     <input type="age" step="0.01" placeholder="Enter Age" name="age" required v-model="posts.age">
     <label for="gender"><b>Gender</b></label>
